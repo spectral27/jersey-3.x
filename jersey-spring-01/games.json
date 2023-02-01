@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3626fa6bd67a4177",
+    "name": "Gran Turismo",
+    "developer": "Polyphony Digital",
+    "publisher": "Sony Computer Entertainment",
+    "platform": "PlayStation",
+    "year": 1997,
+    "serialNumber": "SCUS-94914",
+    "barcode": "711719419426"
+  },
+  {
+    "id": "99b315f6da1bb171",
+    "name": "Resident Evil 2",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "platform": "PlayStation",
+    "year": 1998,
+    "serialNumber": "SLUS-00421/00592",
+    "barcode": "013388210237"
+  },
+  {
+    "id": "29c04c14de204155",
+    "name": "Wipeout XL",
+    "developer": "Psygnosis",
+    "publisher": "Psygnosis",
+    "platform": "PlayStation",
+    "year": 1996,
+    "serialNumber": "SCUS-94351",
+    "barcode": "711719435129"
+  },
+  {
+    "id": "a2e3289032d74721",
+    "name": "Super Mario Bros.",
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "platform": "Nintendo Entertainment System",
+    "year": 1985,
+    "barcode": "045496630140"
+  }
+]
