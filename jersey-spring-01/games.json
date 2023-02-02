@@ -53,5 +53,16 @@
     "serialNumber": "3274120200",
     "barcode": "5030917024399",
     "origin": "J"
+  },
+  {
+    "id": "4f6ffece482540d0",
+    "name": "Super Mario 64",
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "platform": "Nintendo 64",
+    "year": 1996,
+    "serialNumber": "NUS-006 (USA) NUS-NMSE-USA",
+    "barcode": "045496870010",
+    "origin": "D"
   }
 ]

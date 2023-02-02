@@ -55,6 +55,18 @@ public class GamesController {
         }
     }
 
+    @POST
+    @Path("/bulk")
+    public Response bulkInsert(List<Game> games) {
+        try {
+            gamesService.bulkInsert(games);
+
+            return Response.status(Response.Status.OK).entity("Games added").build();
+        } catch (IOException e) {
+            return errorResponse(e);
+        }
+    }
+
     public Response errorResponse(Exception e) {
         StringWriter stringWriter = new StringWriter();
         PrintWriter printWriter = new PrintWriter(stringWriter);
