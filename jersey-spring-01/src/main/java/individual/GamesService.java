@@ -13,6 +13,8 @@ public class GamesService {
 
     private GamesRepository gamesRepository;
 
+    public static String origin;
+
     public List<Game> selectAllGames() throws IOException {
         return gamesRepository.readFromFile();
     }
@@ -21,6 +23,7 @@ public class GamesService {
         List<Game> games = gamesRepository.readFromFile();
 
         game.setId(UUID.randomUUID().toString().replace("-", "").substring(0, 16));
+        game.setOrigin(origin);
 
         games.add(game);
 

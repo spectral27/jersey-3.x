@@ -7,7 +7,8 @@
     "platform": "PlayStation",
     "year": 1997,
     "serialNumber": "SCUS-94914",
-    "barcode": "711719419426"
+    "barcode": "711719419426",
+    "origin": null
   },
   {
     "id": "99b315f6da1bb171",
@@ -17,7 +18,8 @@
     "platform": "PlayStation",
     "year": 1998,
     "serialNumber": "SLUS-00421/00592",
-    "barcode": "013388210237"
+    "barcode": "013388210237",
+    "origin": null
   },
   {
     "id": "29c04c14de204155",
@@ -27,7 +29,8 @@
     "platform": "PlayStation",
     "year": 1996,
     "serialNumber": "SCUS-94351",
-    "barcode": "711719435129"
+    "barcode": "711719435129",
+    "origin": null
   },
   {
     "id": "a2e3289032d74721",
@@ -36,6 +39,19 @@
     "publisher": "Nintendo",
     "platform": "Nintendo Entertainment System",
     "year": 1985,
-    "barcode": "045496630140"
+    "serialNumber": null,
+    "barcode": "045496630140",
+    "origin": null
+  },
+  {
+    "id": "244b468fb20846a6",
+    "name": "Doom 3",
+    "developer": "id Software",
+    "publisher": "Activision",
+    "platform": "Windows XP",
+    "year": 2004,
+    "serialNumber": "3274120200",
+    "barcode": "5030917024399",
+    "origin": "J"
   }
 ]

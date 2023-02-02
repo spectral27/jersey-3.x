@@ -15,5 +15,6 @@ public class Game {
     private int year;
     private String serialNumber;
     private String barcode;
+    private String origin;
 
 }
