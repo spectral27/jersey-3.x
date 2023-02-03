@@ -1,0 +1,4 @@
+FROM eclipse-temurin:17
+COPY build/libs/jersey-spring-01-1.0-SNAPSHOT-all.jar run.jar
+COPY games.json games.json
+ENTRYPOINT ["java", "-jar", "-Dorigin=K", "/run.jar"]
