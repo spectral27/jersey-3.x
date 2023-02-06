@@ -1,8 +1,9 @@
 #!/bin/bash
 echo "** Gradle **"
-./gradlew clean shadowJar
+gradle clean shadowJar
 
 echo -e "\n** Docker **"
+docker rmi spectre27/jerseyspringartifact01
 docker build -t spectre27/jerseyspringartifact01 -f docker/Dockerfile.kubernetes .
 docker push spectre27/jerseyspringartifact01
 
