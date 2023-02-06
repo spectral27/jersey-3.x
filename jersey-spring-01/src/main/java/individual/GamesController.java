@@ -57,12 +57,38 @@ public class GamesController {
 
     @POST
     @Path("/bulk")
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response bulkInsert(List<Game> games) {
         try {
             gamesService.bulkInsert(games);
 
             return Response.status(Response.Status.OK).entity("Games added").build();
         } catch (IOException e) {
+            return errorResponse(e);
+        }
+    }
+
+    @PUT
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateGame(@PathParam("id") String id, Game game) {
+        try {
+            gamesService.updateGame(id, game);
+
+            return Response.status(Response.Status.OK).entity("Game updated").build();
+        } catch (IOException e) {
+            return errorResponse(e);
+        }
+    }
+
+    @DELETE
+    @Path("/{id}")
+    public Response deleteGame(@PathParam("id") String id) {
+        try {
+            gamesService.deleteGame(id);
+
+            return Response.status(Response.Status.OK).entity("Game deleted").build();
+        } catch (IOException | NullPointerException e) {
             return errorResponse(e);
         }
     }
