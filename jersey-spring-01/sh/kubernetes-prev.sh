@@ -9,9 +9,9 @@ docker push spectre27/jerseyspringartifact01
 
 echo -e "\n** Kubernetes **"
 kubectl apply -f sh/v1.yaml
-kubectl delete service jerseyservice
+kubectl delete service jerseyspring
 kubectl delete deployment jerseyspring
 kubectl create deployment jerseyspring --image=spectre27/jerseyspringartifact01
-kubectl apply -f sh/service-jerseyspring.yaml
+kubectl expose deployment jerseyspring --type=NodePort --port=8080
 kubectl get services
 # kubectl port-forward service/jerseyspring 8181:8080
