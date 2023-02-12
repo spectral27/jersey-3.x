@@ -24,7 +24,8 @@ public class GamesRepository {
     }
 
     public void writeToFile(List<Game> games) throws IOException {
-        String gamesJson = jackson.writeValueAsString(games);
+        String gamesJson = jackson.writerWithDefaultPrettyPrinter()
+                .writeValueAsString(games);
 
         Files.writeString(Path.of("games.json"), gamesJson);
     }
