@@ -11,7 +11,7 @@ echo -e "\n** Kubernetes **"
 kubectl apply -f sh/v1.yaml
 kubectl delete service jerseyservice
 kubectl delete deployment jerseyspring
-kubectl create deployment jerseyspring --image=spectre27/jerseyspringartifact01
-kubectl apply -f sh/service-jerseyspring.yaml
+kubectl apply -f sh/v2.yaml
+kubectl apply -f sh/v3.yaml
 kubectl get services
 # kubectl port-forward service/jerseyspring 8181:8080

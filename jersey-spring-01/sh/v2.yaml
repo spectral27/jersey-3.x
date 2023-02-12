@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jerseyspring-deployment
+  labels:
+    app: jerseyspring
+spec:
+  selector:
+    matchLabels:
+      app: jerseyspring
+  template:
+    metadata:
+      labels:
+        app: jerseyspring
+    spec:
+      containers:
+      - name: jerseyspring
+        image: spectre27/jerseyspringartifact01
+        ports:
+        - containerPort: 8080
