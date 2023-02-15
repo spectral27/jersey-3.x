@@ -12,6 +12,15 @@ public class Main {
     public static ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringBeans.class);
 
     public static void main(String[] args) {
+        String origin = System.getProperty("origin");
+
+        if (origin != null && origin.length() > 0) {
+            System.out.println("Origin set to " + origin);
+        } else {
+            System.out.println("Origin not set");
+            System.exit(0);
+        }
+
         URI url = URI.create("http://0.0.0.0:8080");
 
         ResourceConfig resourceConfig = new ResourceConfig();
