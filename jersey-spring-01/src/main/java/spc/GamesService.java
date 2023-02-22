@@ -1,4 +1,4 @@
-package individual;
+package spc;
 
 import lombok.Getter;
 import lombok.Setter;

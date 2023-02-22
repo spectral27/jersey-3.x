@@ -23,7 +23,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'individual.Main'
+        attributes 'Main-Class': 'spc.Main'
     }
 }
 

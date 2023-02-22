@@ -1,4 +1,4 @@
-package individual;
+package spc;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -13,7 +13,7 @@ import java.util.List;
 @Path("/games")
 public class GamesController {
 
-    private GamesService gamesService = Main.context.getBean("gamesService", GamesService.class);
+    private final GamesService gamesService = Main.context.getBean("gamesService", GamesService.class);
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

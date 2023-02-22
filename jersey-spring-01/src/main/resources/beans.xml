@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="gamesRepository" class="individual.GamesRepository"/>
+    <bean id="jackson" class="com.fasterxml.jackson.databind.ObjectMapper"/>
 
-    <bean id="gamesService" class="individual.GamesService">
+    <bean id="gamesRepository" class="spc.GamesRepository">
+        <property name="jackson" ref="jackson"/>
+    </bean>
+
+    <bean id="gamesService" class="spc.GamesService">
         <property name="gamesRepository" ref="gamesRepository"/>
     </bean>
 
