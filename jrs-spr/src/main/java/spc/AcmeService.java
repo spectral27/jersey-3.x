@@ -1,15 +1,13 @@
 package spc;
 
+import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.Map;
 
 public class AcmeService {
 
-    public Map<String, String> getAcme() {
-        Map<String, String> result = new HashMap<>();
-        result.put(String.valueOf(this), AcmeService.class.getSimpleName());
-
-        return result;
+    public void serviceMethod(Map<String, String> input) {
+        input.put(AcmeService.class.getName(), LocalTime.now().withNano(0).toString());
     }
 
 }
