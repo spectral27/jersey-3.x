@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: versionsartifact-deployment
+  labels:
+    app: versionsartifact
+spec:
+  selector:
+    matchLabels:
+      app: versionsartifact
+  template:
+    metadata:
+      labels:
+        app: versionsartifact
+    spec:
+      containers:
+        - name: versionsartifact
+          image: spectre27/versionsartifact-image-pod
+          ports:
+            - containerPort: 8080

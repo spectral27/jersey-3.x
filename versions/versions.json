@@ -1,0 +1,44 @@
+[
+  {
+    "id": "X1xAHhadA7rucKmc",
+    "name": "Java",
+    "version": "17.0.6",
+    "release": "2023-01-17"
+  },
+  {
+    "id": "CWWcVCV2U4iLkVG5",
+    "name": "Spring Framework",
+    "version": "6.0.6",
+    "release": "2023-03-02"
+  },
+  {
+    "id": "GydflDUvm1QV9E1c",
+    "name": "Gradle",
+    "version": "8.0.2",
+    "release": "2023-03-03"
+  },
+  {
+    "id": "MVznm0bcnilADjE1",
+    "name": "Maven",
+    "version": "3.9.0",
+    "release": "2023-01-31"
+  },
+  {
+    "id": "GKLvkO8kJMpXiEoR",
+    "name": "Git",
+    "version": "2.40.0",
+    "release": "2023-03-12"
+  },
+  {
+    "id": "Du3AoBDtrFJd9zib",
+    "name": "Docker",
+    "version": "23.0.1",
+    "release": "2023-02-09"
+  },
+  {
+    "id": "KxrOdwYo8j6MuBmK",
+    "name": "Kubernetes",
+    "version": "1.26.2",
+    "release": "2023-03-01"
+  }
+]
