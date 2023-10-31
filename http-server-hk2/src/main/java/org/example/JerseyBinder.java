@@ -1,4 +1,4 @@
-package spc;
+package org.example;
 
 import org.glassfish.jersey.internal.inject.AbstractBinder;
 

@@ -1,4 +1,4 @@
-package spc;
+package org.example;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.inject.Inject;
@@ -19,14 +19,9 @@ public class AcmeController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAcme() {
-        try {
-            Map<String, String> result = acmeService.getAcme();
-            result.put("controller", AcmeController.class.getSimpleName());
-
-            return Response.status(Response.Status.OK).entity(result).build();
-        } catch (JsonProcessingException e) {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e).build();
-        }
+        Map<String, String> result = acmeService.getAcme();
+        result.put("controller", AcmeController.class.getSimpleName());
+        return Response.status(Response.Status.OK).entity(result).build();
     }
 
 }

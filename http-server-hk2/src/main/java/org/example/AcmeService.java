@@ -1,16 +1,13 @@
-package spc;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
+package org.example;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class AcmeService {
 
-    public Map<String, String> getAcme() throws JsonProcessingException {
+    public Map<String, String> getAcme() {
         Map<String, String> result = new HashMap<>();
         result.put("service", AcmeService.class.getSimpleName());
-
         return result;
     }
 
